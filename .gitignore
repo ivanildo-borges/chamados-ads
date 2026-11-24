@@ -152,7 +152,7 @@ activemq-data/
 # Environments
 .env
 .envrc
-.venv
+.venv/
 env/
 venv/
 ENV/
@@ -221,3 +221,14 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Local configuration, databases, and temporary files
+.env.*
+!.env.example
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.tmp
+*.temp
+*.swp
